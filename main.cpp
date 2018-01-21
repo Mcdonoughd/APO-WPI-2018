@@ -1,0 +1,3 @@
+#ifdef false
+g++
+#endif
