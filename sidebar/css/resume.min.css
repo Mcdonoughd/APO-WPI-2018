@@ -66,10 +66,8 @@ h2 {
 
 @media (min-width: 992px) {
   #sideNav {
-    
     position: fixed;
     top: 0;
-    
     flex-direction: column;
     width: 17rem;
     height: 100vh;
@@ -79,7 +77,6 @@ h2 {
     margin-left: -230px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: #1a1a1a;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -94,6 +91,7 @@ h2 {
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
+  
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -125,7 +123,7 @@ h2 {
     z-index: -1;
     height: 100%;
     width: 3px;
-    background-color: #1c1c1c;
+    background-color: #4169e1;
     -webkit-transition: width .2s ease-in;
       -moz-transition:  width .2s ease-in;
        -ms-transition:  width .2s ease-in;
@@ -212,10 +210,7 @@ h2 {
   .nav .open > a, 
 .nav .open > a:hover, 
 .nav .open > a:focus {background-color: transparent;}
-  
-  
-  
-  
+    
 }
 
 section.resume-section {
@@ -245,17 +240,13 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #4169e1 !important;
 }
 
 .text-primary {
   color: #BD5D38 !important;
 }
 
-a {
-  color: #BD5D38;
-}
 
-a:hover, a:focus, a:active {
-  color: #824027;
-}
+
+
