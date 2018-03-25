@@ -7,33 +7,22 @@
 }
 
 /*Set navbar container size dependant on device size*/
-@media (min-width:768px) {
-    .container {
-        width: 503px
-    }
+@media (min-width: 992px){
+.container {
+    width: auto !important;
+}
 }
 
-@media (min-width:992px) {
-    .container {
-        width: 723px
-    }
+@media (min-width: 768px){
+.container {
+    width: auto !important;
 }
-
-@media (min-width:1200px) {
-    .container {
-        width: 923px
-    }
-}
-
-@media (min-width:1432px) {
-    .container {
-        width: 1170px
-    }
 }
 
 
 .navbar{
-	background-color: #4169e1 !important; /*Set navbar color to blue*/
+	/* #4169e1 */
+	background-color: #0033ab !important; /*Set navbar color to blue*/
 	color:#ccc !important; /*Set text color to white*/
 }
 
@@ -57,7 +46,7 @@
 }
 
 /*push the body down to make room for the mobile navigation bar*/
-@media (max-width:768px){
+@media (max-width:760px){
 	body {
 		font-family: APO !important;
 		padding-top: 70px
@@ -104,8 +93,8 @@
     }
     .navbar-fixed-left .navbar-collapse,
     .navbar-fixed-right .navbar-collapse {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
         max-height: none
     }
     .navbar-fixed-left .navbar-collapse .navbar-nav,
@@ -150,6 +139,10 @@
 	-webkit-box-shadow: none;
 }
 
+.panel-group .panel+.panel {
+     margin-top: 0px;
+}
+
 /*set heading padding to 0 so that anchor tag can fill space*/
 .panel-heading{
 	padding: 0px;	
@@ -163,8 +156,8 @@ h4>a, h5>a {
 
 /*make bg color constant when collapsing*/
 .collapse,.collapsing, .collapse.in{
-	background-color: #4169e1 !important;
-	padding: 5px 10px 2px 0px !important;
+	background-color: #0033ab !important;
+	padding: 5px 10px 5px 5px !important;
 }
 
 /*set default colors for mobile*/
@@ -172,7 +165,7 @@ h4>a, h5>a {
 	.panel-default>.panel-heading,
 		li.panel.panel-panel{
 		color: #212121;
-		background-color: #e1b941;
+		background-color: #f9c100;
 		border-color: #dddddd;
 	}
 	
@@ -202,7 +195,7 @@ h4>a.odd:active,
 h5>a.odd:hover,
 h5>a.odd:focus,
 h5>a.odd:active{
-	color:#ddd !important;
+	color:#000 !important;
 	background-position: left bottom;
 }
 
@@ -211,7 +204,7 @@ h4>a.odd,h5>a.odd{
   color:#ddd !important;
   border-bottom: 1px solid black;
   display: block;
-  background: linear-gradient(to right,  #002366 50%,  #4169e1 50%);
+  background: linear-gradient(to right,  #4169e1 50%,  #0033ab 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .4s ease;
@@ -230,14 +223,17 @@ h5>a.even:active{
 }
 
 h4>a.even,h5>a.even{
-   text-transform:uppercase;
+  text-transform:uppercase;
   color:#ddd !important;
   border-bottom: 1px solid black;
   display: block;
-  background: linear-gradient(to right,  #e1b941 50%,  #4169e1 50%);
+  background: linear-gradient(to right,  #f9c100 50%,  #0033ab 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .4s ease;
+  
 }
 }
+
+
 
